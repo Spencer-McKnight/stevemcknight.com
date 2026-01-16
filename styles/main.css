@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .mobile-menu__link {
@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: var(--space-5xl) 0 var(--space-3xl);
+  padding: var(--space-4xl) 0 var(--space-2xl);
 }
 
 .hero__background {
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-4xl);
+  gap: var(--space-3xl);
   align-items: center;
 }
 
@@ -546,13 +546,13 @@ h1, h2, h3, h4, h5, h6 {
 .hero__actions {
   display: flex;
   gap: var(--space-md);
-  margin-bottom: var(--space-3xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .hero__stats {
   display: flex;
-  gap: var(--space-3xl);
-  padding-top: var(--space-2xl);
+  gap: var(--space-2xl);
+  padding-top: var(--space-xl);
   border-top: 1px solid var(--color-border);
 }
 
@@ -603,7 +603,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy__header {
   text-align: center;
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-3xl);
 }
 
 .philosophy__title {
@@ -614,7 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy__content {
   max-width: var(--max-width-content);
-  margin: 0 auto var(--space-4xl);
+  margin: 0 auto var(--space-3xl);
 }
 
 .philosophy__intro {
@@ -642,8 +642,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy__quote {
   position: relative;
-  padding: var(--space-3xl) var(--space-2xl);
-  margin: var(--space-3xl) auto;
+  padding: var(--space-2xl) var(--space-xl);
+  margin: var(--space-2xl) auto;
   max-width: 700px;
   text-align: center;
   background: var(--color-bg-tertiary);
@@ -697,8 +697,8 @@ h1, h2, h3, h4, h5, h6 {
 .philosophy__quotes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
-  margin-top: var(--space-4xl);
+  gap: var(--space-lg);
+  margin-top: var(--space-3xl);
 }
 
 .quote-card {
@@ -734,7 +734,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy__cta {
   max-width: var(--max-width-content);
-  margin: var(--space-4xl) auto 0;
+  margin: var(--space-3xl) auto 0;
   text-align: center;
 }
 
@@ -754,7 +754,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: var(--space-4xl);
+  gap: var(--space-3xl);
   align-items: center;
 }
 
@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .books__header {
   text-align: center;
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-3xl);
 }
 
 .books__title {
@@ -989,7 +989,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .connect__content {
   text-align: center;
-  margin-bottom: var(--space-4xl);
+  margin-bottom: var(--space-3xl);
 }
 
 .connect__title {
@@ -1092,7 +1092,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === FOOTER === */
 .footer {
-  padding: var(--space-4xl) 0 var(--space-2xl);
+  padding: var(--space-3xl) 0 var(--space-xl);
   background: var(--color-bg-primary);
   border-top: 1px solid var(--color-border);
 }
@@ -1103,9 +1103,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: var(--space-3xl);
+  padding-bottom: var(--space-2xl);
   border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
 }
 
 .footer__logo {
@@ -1233,7 +1233,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1024px) {
   .hero__container {
     grid-template-columns: 1fr;
-    gap: var(--space-3xl);
+    gap: var(--space-2xl);
     text-align: center;
   }
   
@@ -1271,7 +1271,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .about__container {
     grid-template-columns: 1fr;
-    gap: var(--space-3xl);
+    gap: var(--space-2xl);
   }
   
   .about__image-wrapper {
@@ -1302,7 +1302,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .hero {
     min-height: auto;
-    padding: calc(var(--space-5xl) + 40px) 0 var(--space-3xl);
+    padding: calc(var(--space-4xl) + 40px) 0 var(--space-2xl);
   }
   
   .hero__stats {
