@@ -669,7 +669,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .credential__icon {
-  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-gold-muted);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-gold);
   flex-shrink: 0;
 }
 

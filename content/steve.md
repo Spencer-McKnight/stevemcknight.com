@@ -71,7 +71,7 @@ In 2001, McKnight co-founded the website www.propertyinvesting.com with a view o
 Author
 In 2003, McKnight received an unexpected call from Wright Books (an imprint of John Wiley & Sons), canvassing the idea of writing a property book. Willing to give something new a go, McKnight wrote his first book (From 0 to 130 Properties in 3.5 Years) on his PC in less than 12 weeks. The book went on to become Australia's #1 selling real estate book (currently having sold over 200,000 copies), and was awarded the status of 'Business Book of the Year' in 2004.
 
-McKnight wrote the sequel (From 0 to 260+ Properties in 7 Years) in 2006, before being asked to revise his first book for re-release in 2010. McKnight's books continue to receive high acclaim and remain among Australia's best selling real estate titles. All royalties received on McKnight's books are donated to the Bradley McKnight Foundation - an organisation that distributes money to underprivileged children.
+McKnight wrote the sequel (From 0 to 260+ Properties in 7 Years) in 2006, before being asked to revise his first book for re-release in 2010. McKnight's books continue to receive high acclaim and remain among Australia's best selling real estate titles.
 
 Expert, Commentator & Speaker
 McKnight is regarded as one of Australia's foremost property experts. He has been extensively featured on TV, radio and print media, and he continues to be regularly quoted in the press. As a highly acclaimed speaker, McKnight has been invited to share his thoughts at events throughout Australia and across the globe.
@@ -79,7 +79,12 @@ McKnight is regarded as one of Australia's foremost property experts. He has bee
 Current Activities
 In recent times, McKnight has turned to property investing in the United States, acquiring over 150 properties in less than 18 months.
 
-“It's like history is repeating itself. There's a plethora of positive cash flow properties on offer, and I'm making hay while the sun shines!”
+"It's like history is repeating itself. There's a plethora of positive cash flow properties on offer, and I'm making hay while the sun shines!"
+
+Strategic Opportunities (Growth & Income) Fund
+McKnight is involved with the Strategic Opportunities (Growth & Income) Fund (SOGIF), an ASIC registered managed investment scheme that seeks to generate growth and income returns through a diversified portfolio of investments. The Fund invests in cash and money market instruments, bonds, strategic equity investments, and entrepreneurial property opportunities - both direct real estate and unlisted property trusts.
+
+The Fund is managed by Plantation Capital Limited, which holds an Australian Financial Services Licence (AFSL 339481). For more information about SOGIF, including the Product Disclosure Statement and investment details, visit [https://sogif.au](https://sogif.au).
 
 McKnight's books are available in bookstores, and online at www.PropertyInvesting.com
 
