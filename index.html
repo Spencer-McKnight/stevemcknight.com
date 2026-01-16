@@ -22,6 +22,9 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
 </head>
 <body>
+  <!-- Skip to main content - Accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav__container">
@@ -40,7 +43,7 @@
           </svg>
         </a>
       </div>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
       </button>
@@ -59,7 +62,7 @@
     </div>
   </div>
 
-  <main>
+  <main id="main">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero__background">
@@ -68,12 +71,7 @@
       </div>
       
       <div class="hero__container container">
-        <div class="hero__content">
-          <div class="hero__badge" data-animate="fade-up">
-            <span class="hero__badge-dot"></span>
-            Australia's #1 Bestselling Property Author
-          </div>
-          
+        <div class="hero__content">          
           <h1 class="hero__title" data-animate="fade-up" data-delay="100">
             You can't change,<br>
             <span class="hero__title-accent">and stay the same</span><br>
@@ -536,6 +534,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <script src="scripts/app.js"></script>
 </body>
