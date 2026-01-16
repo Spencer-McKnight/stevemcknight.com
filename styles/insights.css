@@ -20,13 +20,7 @@
   z-index: -1;
 }
 
-.insights-hero__grain {
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  pointer-events: none;
-}
+/* .insights-hero__grain uses .bg-grain utility from main.css */
 
 .insights-hero__glow {
   position: absolute;
@@ -34,19 +28,11 @@
   left: -10%;
   width: 60%;
   height: 80%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(212, 168, 83, 0.06) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(ellipse at center, rgba(212, 168, 83, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
-.insights-hero__container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-}
+/* .insights-hero__container uses .container utility */
 
 .insights-hero__back {
   display: inline-flex;
@@ -124,11 +110,7 @@
   background: var(--color-bg-secondary);
 }
 
-.qa-section__container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-}
+/* .qa-section__container uses .container utility */
 
 /* === Q&A ITEM === */
 .qa-item {
@@ -162,17 +144,7 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-.qa-item__icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-accent-gold-muted);
-  border-radius: var(--radius-md);
-  color: var(--color-accent-gold);
-}
+/* .qa-item__icon uses .icon-box.icon-box--md utility */
 
 .qa-item__question h2 {
   font-family: var(--font-display);
@@ -271,17 +243,7 @@
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
-.qa-item__highlight-icon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-accent-gold-muted);
-  border-radius: var(--radius-sm);
-  color: var(--color-accent-gold);
-}
+/* .qa-item__highlight-icon uses .icon-box.icon-box--sm utility */
 
 .qa-item__highlight p {
   font-family: var(--font-display);
@@ -401,13 +363,9 @@
   background: var(--gradient-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  transition: all var(--transition-base);
 }
 
-.qa-item__two-col--cards .qa-item__leverage-card:hover {
-  border-color: var(--color-accent-gold);
-  transform: translateY(-4px);
-}
+/* Uses .card-hover utility for hover effects */
 
 .qa-item__leverage-card h3 {
   font-family: var(--font-display);
@@ -446,12 +404,9 @@
   background: var(--color-bg-tertiary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  transition: all var(--transition-base);
 }
 
-.qa-item__mistake:hover {
-  border-color: var(--color-border-hover);
-}
+/* Uses .card-hover utility (border-hover variant) */
 
 .qa-item__mistake-number {
   font-family: var(--font-display);
@@ -521,21 +476,8 @@
   position: relative;
 }
 
-.next-steps::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-border), transparent);
-}
-
-.next-steps__container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-}
+/* Uses .section-border::before utility */
+/* .next-steps__container uses .container utility */
 
 .next-steps__header {
   text-align: center;
@@ -565,15 +507,11 @@
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
 }
 
-.next-steps__card:hover {
-  border-color: var(--color-accent-gold);
-  transform: translateY(-4px);
-}
+/* Uses .card-hover utility for hover effects */
 
 .next-steps__card-number {
   font-family: var(--font-display);
@@ -598,19 +536,7 @@
   margin-bottom: var(--space-xl);
 }
 
-.next-steps__link {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--color-accent-gold);
-  transition: gap var(--transition-fast);
-}
-
-.next-steps__link:hover {
-  gap: var(--space-md);
-}
+/* .next-steps__link uses .link-arrow utility */
 
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
