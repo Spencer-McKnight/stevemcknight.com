@@ -506,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === HERO SECTION === */
 .hero {
-  min-height: 85vh;
+  min-height: max(90vh, 900px);
   display: flex;
   flex-direction: column;
   justify-content: center;
