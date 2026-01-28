@@ -786,10 +786,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.about__header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.about__layout {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: var(--space-3xl);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about__image-wrapper {
@@ -1309,7 +1320,7 @@ a.book-card {
     margin-right: auto;
   }
   
-  .about__container {
+  .about__layout {
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
   }
