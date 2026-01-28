@@ -76,12 +76,15 @@ import { URLS } from '../lib/constants.js';
   }
 
   // Active navigation state
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPath = window.location.pathname;
+  const currentPage = currentPath.split('/').pop() || 'index.html';
+  const isInsightsPage = currentPath.includes('/insights');
+  
   $$('.nav__link, .mobile-menu__link').forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPage || 
         (currentPage === 'index.html' && href === '#') ||
-        (currentPage === 'insights.html' && href === 'insights.html')) {
+        (isInsightsPage && (href === 'insights/' || href === '../insights/'))) {
       link.classList.add(link.classList.contains('nav__link') ? 'nav__link--active' : 'mobile-menu__link--active');
     }
   });
