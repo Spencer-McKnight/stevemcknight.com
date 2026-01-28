@@ -17,7 +17,6 @@
   --color-accent-gold: #d4a853;
   --color-accent-gold-light: #e8c67a;
   --color-accent-gold-muted: rgba(212, 168, 83, 0.15);
-  --color-accent-warm: #c9a961;
   
   /* === TEXT COLORS === */
   --color-text-primary: #fafafa;
@@ -37,11 +36,6 @@
     #0f0f12 50%,
     #12110f 100%
   );
-  --gradient-gold-subtle: linear-gradient(
-    135deg,
-    rgba(212, 168, 83, 0.03) 0%,
-    transparent 60%
-  );
   --gradient-card: linear-gradient(
     180deg,
     var(--color-bg-tertiary) 0%,
@@ -51,7 +45,6 @@
   /* === TYPOGRAPHY === */
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
   
   /* Font Sizes - Fluid Typography */
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -113,7 +106,6 @@
   --color-accent-gold: #996a1a;
   --color-accent-gold-light: #b8860b;
   --color-accent-gold-muted: rgba(153, 106, 26, 0.12);
-  --color-accent-warm: #8b5a00;
   
   /* Text */
   --color-text-primary: #18181b;
