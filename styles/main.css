@@ -1296,11 +1296,11 @@ a.book-card {
   }
   
   .book-card {
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 150px 1fr;
   }
   
   .book-card__image {
-    max-width: 200px;
+    max-width: 150px;
     margin: 0 auto;
   }
   
@@ -1340,6 +1340,10 @@ a.book-card {
     justify-content: center;
     /* Ensure minimum touch target size */
     min-height: 48px;
+  }
+
+  .book-card {
+    grid-template-columns: 1fr;
   }
   
   /* Improve touch targets on mobile */
