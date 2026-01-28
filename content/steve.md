@@ -223,12 +223,6 @@ Books & Seminars
 
 The next level of help I can offer is via reading the books I’ve written and attending my bi-annual live market updates (held in the major capital cities).
 
-Property Apprenticeship
-
-If you’d like to work more closely with me and my education team, we offer a fantastic course we call our “Property Apprenticeship” which, once completed, results in a formal qualification (a Certificate IV in business).
-
-Becoming a Property Apprentice is definitely a worthwhile investment if you’re looking to fast track your investing progress. More information is available here.
-
 Wishing you with all the best of success, and that your investing delivers the life-changing results that I’ve been able to achieve.
 
 - Steve McKnight

@@ -311,6 +311,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Light mode nav scrolled state */
+[data-theme="light"] .nav--scrolled {
+  background: rgba(250, 250, 250, 0.9);
+}
+
 .nav__container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -374,6 +379,41 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent-gold);
+  background: var(--color-accent-gold-muted);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Show sun icon by default (dark mode), hide moon */
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun { display: block; }
+
+/* In light mode, show moon icon, hide sun */
+[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+
+/* Mobile theme toggle - visible on mobile */
+.theme-toggle--mobile {
+  display: none;
+}
+
 .nav__toggle {
   display: none;
   width: 32px;
@@ -411,6 +451,11 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-base);
+}
+
+/* Light mode mobile menu */
+[data-theme="light"] .mobile-menu {
+  background: var(--color-bg-primary);
 }
 
 .mobile-menu--open {
@@ -1348,6 +1393,10 @@ a.book-card {
 @media (max-width: 768px) {
   .nav__links {
     display: none;
+  }
+  
+  .theme-toggle--mobile {
+    display: flex;
   }
   
   .nav__toggle {

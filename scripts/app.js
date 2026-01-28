@@ -12,6 +12,29 @@ import { URLS } from '../lib/constants.js';
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
 
+  // Theme toggle - persists across pages
+  const initTheme = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+  };
+
+  const toggleTheme = () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  };
+
+  // Initialize theme immediately
+  initTheme();
+
+  // Bind toggle buttons
+  $$('#themeToggle, #themeToggleMobile').forEach(btn => {
+    btn?.addEventListener('click', toggleTheme);
+  });
+
   // Populate book links from constants
   $$('[data-book-link]').forEach(link => {
     const bookKey = link.dataset.bookLink;

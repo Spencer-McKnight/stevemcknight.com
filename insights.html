@@ -45,7 +45,25 @@
             <path d="M7 17L17 7M17 7H7M17 7V17"/>
           </svg>
         </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
       </div>
+      <button class="theme-toggle theme-toggle--mobile" id="themeToggleMobile" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span>
         <span></span>
@@ -117,13 +135,6 @@
           <div class="qa-item__number" data-animate="fade-up">01</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                  <path d="M12 17h.01"/>
-                </svg>
-              </div>
               <h2>What motivated you to risk leaving a comfortable job to become a property investor? Was there a key moment where you knew you were committed to becoming "financially free"?</h2>
             </div>
             
@@ -151,20 +162,13 @@
             </div>
             
             <aside class="qa-item__highlight" data-animate="scale-in" data-delay="300">
-              <div class="qa-item__highlight-icon icon-box icon-box--sm">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                  <path d="M2 17l10 5 10-5"/>
-                  <path d="M2 12l10 5 10-5"/>
-                </svg>
-              </div>
               <p>
                 Truth be told, I was already living my worst case scenario (doing a job simply 
                 for the pay), so any improvement was a step in the right direction.
               </p>
             </aside>
             
-            <div class="qa-item__conclusion" data-animate="fade-up" data-delay="350">
+            <div class="qa-item__answer" data-animate="fade-up" data-delay="350">
               <p>
                 The moment I knew I was financially free was when the net income from my 
                 property investments exceeded the salary I was earning as an accountant. 
@@ -174,25 +178,11 @@
           </div>
         </article>
         
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
-        
         <!-- Question 2: Staying Focused -->
         <article class="qa-item" id="staying-focused">
           <div class="qa-item__number" data-animate="fade-up">02</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <polyline points="12 6 12 12 16 14"/>
-                </svg>
-              </div>
               <h2>How did you stay focused and motivated to keep moving forward with your investment goals, and avoid falling prey to "moments of weakness"?</h2>
             </div>
             
@@ -245,12 +235,6 @@
             </div>
             
             <aside class="qa-item__highlight" data-animate="scale-in" data-delay="400">
-              <div class="qa-item__highlight-icon icon-box icon-box--sm">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-              </div>
               <p>
                 These two points are among the most important realisations I have ever had.
               </p>
@@ -258,24 +242,11 @@
           </div>
         </article>
         
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
-        
         <!-- Question 3: Outlook -->
         <article class="qa-item" id="outlook">
           <div class="qa-item__number" data-animate="fade-up">03</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                </svg>
-              </div>
               <h2>How has your outlook and focus changed over time as your investing income grew to the point you no longer needed your job? And what keeps you motivated now that you're no longer "chasing a paycheque"?</h2>
             </div>
             
@@ -297,36 +268,29 @@
               </p>
             </div>
             
-            <div class="qa-item__two-col" data-animate="fade-up" data-delay="300">
-              <div class="qa-item__journey">
-                <h3>Quest #1</h3>
-                <p><strong>Control</strong></p>
-                <p>My first quest was all about controlling my finances as a way of controlling my work environment.</p>
+            <div class="qa-item__list" data-animate="fade-up" data-delay="300">
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">1</div>
+                <p>
+                  <strong>Control</strong> — My first quest was all about controlling my finances as a way of controlling my work environment.
+                </p>
               </div>
-              <div class="qa-item__journey">
-                <h3>Quest #2</h3>
-                <p><strong>Significance</strong></p>
-                <p>Once I had achieved my financial goal, I had more time to work on my quest for life meaning.</p>
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">2</div>
+                <p>
+                  <strong>Significance</strong> — Once I had achieved my financial goal, I had more time to work on my quest for life meaning.
+                </p>
               </div>
             </div>
             
             <aside class="qa-item__highlight" data-animate="scale-in" data-delay="350">
-              <div class="qa-item__highlight-icon icon-box icon-box--sm">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="12" y1="16" x2="12" y2="12"/>
-                  <line x1="12" y1="8" x2="12.01" y2="8"/>
-                </svg>
-              </div>
               <p>
-                With the benefit of hindsight, I think there's a stronger connection between 
-                the two journeys than I first realised because the second journey can give 
-                meaning and context to the first journey. That is, it's hard to succeed in 
-                Journey #1 without some grasp of Journey #2.
+                With the benefit of hindsight, the second journey can give meaning and context to the first. 
+                It's hard to succeed in Quest #1 without some grasp of Quest #2.
               </p>
             </aside>
             
-            <div class="qa-item__conclusion" data-animate="fade-up" data-delay="400">
+            <div class="qa-item__answer" data-animate="fade-up" data-delay="400">
               <p>
                 So, what keeps me motivated today? I still have financial needs and goals, 
                 but they are no longer primarily about me and my comfort, but rather 
@@ -336,30 +300,15 @@
           </div>
         </article>
         
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
-        
         <!-- Question 4: Mistakes -->
         <article class="qa-item" id="mistakes">
           <div class="qa-item__number" data-animate="fade-up">04</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                  <line x1="12" y1="9" x2="12" y2="13"/>
-                  <line x1="12" y1="17" x2="12.01" y2="17"/>
-                </svg>
-              </div>
               <h2>Every investor will face setbacks and challenges in their investing journey. What advice can you give someone who is struggling to move forward after experiencing a big investing mistake?</h2>
             </div>
             
-            <blockquote class="qa-item__blockquote qa-item__blockquote--featured" data-animate="scale-in" data-delay="200">
+            <blockquote class="qa-item__blockquote" data-animate="scale-in" data-delay="200">
               <div class="qa-item__blockquote-mark">"</div>
               <p>Provided it's not fatal, something is only a mistake if it happens more than once. The first time is a learning opportunity and a chance to improve.</p>
             </blockquote>
@@ -379,11 +328,6 @@
             </div>
             
             <aside class="qa-item__highlight" data-animate="scale-in" data-delay="350">
-              <div class="qa-item__highlight-icon icon-box icon-box--sm">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
               <p>
                 <strong>Investing is about risk management, not risk avoidance.</strong> 
                 Things can and will go wrong, and when they do, you may find that how you 
@@ -393,27 +337,11 @@
           </div>
         </article>
         
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
-        
         <!-- Question 5: Common Mistakes -->
         <article class="qa-item" id="common-errors">
           <div class="qa-item__number" data-animate="fade-up">05</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
               <h2>What are the most common mistakes you see people making when starting in property investment?</h2>
             </div>
             
@@ -421,86 +349,40 @@
               <p>Here are four:</p>
             </div>
             
-            <div class="qa-item__mistakes-grid" data-animate="fade-up" data-delay="250">
-              <div class="qa-item__mistake">
-                <div class="qa-item__mistake-number">01</div>
-                <h3>Thinking that having more money will make them happier.</h3>
+            <div class="qa-item__list" data-animate="fade-up" data-delay="250">
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">1</div>
                 <p>
-                  To borrow another phrase from Brendan Nichols: 'money doesn't buy happiness, 
-                  but everyone has the right to figure that out for themselves.'
-                </p>
-                <p>
-                  Money can help you look happier, but it will never meet the deepest needs 
-                  of your soul. Happiness relates to being content; filling your life with 
-                  things that deliver temporal rather than eternal significance will only 
-                  deliver temporary relief.
+                  <strong>Thinking more money will make them happier.</strong> Money can help you look happier, but it will never meet the deepest needs of your soul. Filling your life with things that deliver temporal rather than eternal significance will only deliver temporary relief.
                 </p>
               </div>
-              
-              <div class="qa-item__mistake">
-                <div class="qa-item__mistake-number">02</div>
-                <h3>Concentrating on 'how' rather than 'why'</h3>
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">2</div>
                 <p>
-                  Because the goal is 'how' to have more money, rather than 'why' is more 
-                  money a priority, it's easy to waste time looking for quick fixes rather 
-                  than permanent solutions.
-                </p>
-                <p>
-                  The strategy is the mechanism for making money, but it is not the reason 
-                  for making money. It's much smarter to let your 'why' dictate the best 
-                  'how', rather than having your 'how' dictate your 'why'.
+                  <strong>Concentrating on 'how' rather than 'why'.</strong> It's much smarter to let your 'why' dictate the best 'how', rather than having your 'how' dictate your 'why'. The strategy is the mechanism for making money, but it is not the reason for making money.
                 </p>
               </div>
-              
-              <div class="qa-item__mistake">
-                <div class="qa-item__mistake-number">03</div>
-                <h3>Failing to start</h3>
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">3</div>
                 <p>
-                  It's been said that 'you don't have to be great to start, but you have to 
-                  start to be great.'
-                </p>
-                <p>
-                  Again, the lack of certainty about how to start is because there is a lack 
-                  of certainty about why starting is a priority.
+                  <strong>Failing to start.</strong> You don't have to be great to start, but you have to start to be great. The lack of certainty about how to start is because there is a lack of certainty about why starting is a priority.
                 </p>
               </div>
-              
-              <div class="qa-item__mistake">
-                <div class="qa-item__mistake-number">04</div>
-                <h3>Money follows management</h3>
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">4</div>
                 <p>
-                  All too often property investors are overly focused on what they're buying, 
-                  when the real money is made by maximising the value proposition of how the 
-                  asset is owned and managed (and ultimately sold), as opposed to how it was acquired.
+                  <strong>Overlooking management.</strong> The real money is made by maximising how the asset is owned and managed, not just how it was acquired. Any idiot can sign their name, but it takes skill to make the most money, in the quickest time, for the least risk.
                 </p>
-                <blockquote>
-                  Any idiot can sign their name, but it takes skill to make the most money, 
-                  in the quickest time, for the least risk.
-                </blockquote>
               </div>
             </div>
           </div>
         </article>
-        
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
         
         <!-- Question 6: Funding -->
         <article class="qa-item" id="funding">
           <div class="qa-item__number" data-animate="fade-up">06</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <line x1="12" y1="1" x2="12" y2="23"/>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                </svg>
-              </div>
               <h2>When you started as an investor, you had never bought a property, and only had modest savings in the bank - but you came up with some clever strategies to fund your property purchases. What are some of the best ways to fund deposits for properties without living off 2-minute noodles?</h2>
             </div>
             
@@ -521,65 +403,34 @@
               </p>
             </div>
             
-            <div class="qa-item__two-col qa-item__two-col--cards" data-animate="fade-up" data-delay="300">
-              <div class="qa-item__leverage-card">
-                <h3>Leveraging Time</h3>
+            <div class="qa-item__list" data-animate="fade-up" data-delay="300">
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">1</div>
                 <p>
-                  You can rearrange your own schedule, but you still only have 24 hours a day. 
-                  So the better approach is to outsource and delegate but retain management 
-                  and control.
-                </p>
-                <p class="qa-item__example">
-                  <strong>Example:</strong> Rather than spending hours searching the internet 
-                  for deals, create a deal profile that explains exactly what you are looking 
-                  for and email it to all the agents in the area where you think those 
-                  properties might exist. That way you will have multiple people looking in 
-                  multiple areas without costing you a cent!
+                  <strong>Leveraging Time</strong> — Outsource and delegate but retain management and control. Rather than spending hours searching for deals, create a deal profile and email it to all the agents in your target area. Multiple people looking in multiple areas without costing you a cent.
                 </p>
               </div>
-              <div class="qa-item__leverage-card">
-                <h3>Leveraging Money</h3>
+              <div class="qa-item__list-item">
+                <div class="qa-item__list-number">2</div>
                 <p>
-                  Either join forces with a money partner (someone who has the money but not 
-                  the time or skill you have to invest it), or else use a leveraged investment 
-                  technique such as vendor finance, lease options or vendor carry back.
-                </p>
-                <p class="qa-item__example">
-                  <strong>Learn More:</strong> If these terms are new to you, do a google 
-                  search or even better, grab a hold of the revised edition of my first book 
-                  and read Chapters 12 to 18.
+                  <strong>Leveraging Money</strong> — Join forces with a money partner, or use techniques like vendor finance, lease options or vendor carry back. If these terms are new, read Chapters 12 to 18 of my first book.
                 </p>
               </div>
             </div>
           </div>
         </article>
         
-        <div class="qa-divider" data-animate="fade-up">
-          <span></span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-          <span></span>
-        </div>
-        
         <!-- Question 7: Best Advice -->
         <article class="qa-item" id="advice">
           <div class="qa-item__number" data-animate="fade-up">07</div>
           <div class="qa-item__content">
             <div class="qa-item__question" data-animate="fade-up" data-delay="100">
-              <div class="qa-item__icon icon-box icon-box--md">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                  <path d="M2 17l10 5 10-5"/>
-                  <path d="M2 12l10 5 10-5"/>
-                </svg>
-              </div>
               <h2>Now that you've achieved your goal, if you could go back in time, and give yourself one piece of advice that would help you as a property investor, what would it be?</h2>
             </div>
             
-            <blockquote class="qa-item__blockquote qa-item__blockquote--latin" data-animate="scale-in" data-delay="200">
+            <blockquote class="qa-item__blockquote" data-animate="scale-in" data-delay="200">
               <div class="qa-item__blockquote-mark">"</div>
-              <p><span class="qa-item__latin">Carpe diem</span> — seize the day!</p>
+              <p>Carpe diem — seize the day!</p>
             </blockquote>
             
             <div class="qa-item__answer" data-animate="fade-up" data-delay="250">
@@ -593,12 +444,7 @@
               </p>
             </div>
             
-            <aside class="qa-item__highlight qa-item__highlight--golden" data-animate="scale-in" data-delay="300">
-              <div class="qa-item__highlight-icon icon-box icon-box--sm">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                </svg>
-              </div>
+            <aside class="qa-item__highlight" data-animate="scale-in" data-delay="300">
               <p>
                 Procrastination is like 'progress cancer'. Luckily there's an instant cure, 
                 if you have the courage to apply it: <strong>reassessing, learning, and taking action.</strong>
@@ -610,80 +456,61 @@
       </div>
     </section>
 
-    <!-- Next Steps Section -->
-    <section class="next-steps section-border">
-      <div class="next-steps__container container">
-        <div class="next-steps__header" data-animate="fade-up">
+    <!-- Connect Section -->
+    <section class="connect" id="connect">
+      <div class="connect__container container" data-animate="fade-up">
+        <div class="connect__content">
           <span class="section-label">What's Next?</span>
-          <h2 class="next-steps__title">Ready to Take Action?</h2>
-          <p class="next-steps__subtitle">
+          <h2 class="connect__title">
+            Ready to Take Action?
+          </h2>
+          <p class="connect__text">
             If you're interested in following in my footsteps to become a property investor - 
-            or want to take your property investing to the next level - here's how I can help:
+            or want to take your property investing to the next level - here's how I can help.
           </p>
+          <a href="index.html#books" class="btn btn--ghost" style="margin-top: var(--space-xl);">
+            View My Books
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
         
-        <div class="next-steps__cards">
-          <div class="next-steps__card card-hover" data-animate="fade-up" data-delay="100">
-            <div class="next-steps__card-number">01</div>
-            <h3>PropertyInvesting.com</h3>
-            <p>
-              The least costly way is by becoming a member of PropertyInvesting.com (it's free!) 
-              Doing that will help you stay up to date with what I have to say about various 
-              investing matters as the property market ebbs and flows.
+        <div class="connect__cards">
+          <a href="https://propertyinvesting.com" target="_blank" rel="noopener" class="connect-card card-hover">
+            <div class="connect-card__icon icon-box icon-box--lg">
+              <img src="images/propertyinvesting-logo.png" alt="PropertyInvesting.com Logo" width="32" height="32" style="object-fit: cover; width: 100%; height: 100%; border-radius: inherit;">
+            </div>
+            <h3 class="connect-card__title">PropertyInvesting.com</h3>
+            <p class="connect-card__text">
+              Join 160,000+ members for independent, practical investment insights. 
+              Free membership includes market updates and community access.
             </p>
-            <a href="https://propertyinvesting.com" target="_blank" rel="noopener" class="next-steps__link link-arrow">
-              Join Free
+            <span class="connect-card__link link-arrow">
+              Visit Website
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M7 17L17 7M17 7H7M17 7V17"/>
               </svg>
-            </a>
-          </div>
+            </span>
+          </a>
           
-          <div class="next-steps__card card-hover" data-animate="fade-up" data-delay="200">
-            <div class="next-steps__card-number">02</div>
-            <h3>Books & Seminars</h3>
-            <p>
-              The next level of help I can offer is via reading the books I've written and 
-              attending my bi-annual live market updates (held in the major capital cities).
+          <a href="https://sogif.au" target="_blank" rel="noopener" class="connect-card card-hover">
+            <div class="connect-card__icon icon-box icon-box--lg">
+              <img src="images/sogif-logo.avif" alt="SOGIF Logo" width="32" height="32">
+            </div>
+            <h3 class="connect-card__title">SOGIF</h3>
+            <p class="connect-card__text">
+              Strategic Opportunities (Growth & Income) Fund - an ASIC registered 
+              managed investment scheme offering commercial property and diversified opportunities.
             </p>
-            <a href="index.html#books" class="next-steps__link link-arrow">
-              View Books
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
-          
-          <div class="next-steps__card card-hover" data-animate="fade-up" data-delay="300">
-            <div class="next-steps__card-number">03</div>
-            <h3>Property Apprenticeship</h3>
-            <p>
-              If you'd like to work more closely with me and my education team, we offer a 
-              fantastic course we call our "Property Apprenticeship" which, once completed, 
-              results in a formal qualification (a Certificate IV in business).
-            </p>
-            <a href="https://propertyinvesting.com" target="_blank" rel="noopener" class="next-steps__link link-arrow">
-              Learn More
+            <span class="connect-card__link link-arrow">
+              Visit Website
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M7 17L17 7M17 7H7M17 7V17"/>
               </svg>
-            </a>
-          </div>
+            </span>
+          </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta section-border">
-      <div class="final-cta__container" data-animate="fade-up">
-        <blockquote class="final-cta__quote">
-          "Wishing you all the best of success, and that your investing delivers 
-          the life-changing results that I've been able to achieve."
-        </blockquote>
-        <p class="final-cta__signature">
-          God bless,<br>
-          <strong>Steve McKnight</strong>
-        </p>
       </div>
     </section>
   </main>
