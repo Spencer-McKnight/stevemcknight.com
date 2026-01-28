@@ -32,6 +32,26 @@ import { URLS } from '../lib/constants.js';
     }, { passive: true });
   }
 
+  // Scroll indicator fade effect
+  const scrollIndicator = $('.hero__scroll');
+  if (scrollIndicator) {
+    let ticking = false;
+    
+    const updateScrollIndicator = () => {
+      const scrolled = window.pageYOffset;
+      const opacity = Math.max(0, 1 - (scrolled / 300));
+      scrollIndicator.style.opacity = opacity;
+      ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateScrollIndicator);
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
   // Active navigation state
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   $$('.nav__link, .mobile-menu__link').forEach(link => {

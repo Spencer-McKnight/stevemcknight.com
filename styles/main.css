@@ -207,12 +207,17 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(2px);
 }
 
-/* Background texture (shared across pages) */
+/* Background texture (shared across pages) - Subtle luxury overlay */
 .bg-grain {
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.03;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 168, 83, 0.02) 0%,
+    transparent 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
   pointer-events: none;
 }
 
@@ -455,7 +460,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* === HERO SECTION === */
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -576,6 +581,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__image {
+  margin-top: var(--space-md);
   position: relative;
   display: flex;
   justify-content: center;
@@ -585,12 +591,43 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 480px;
   height: auto;
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/5.3;
   object-fit: cover;
   border-radius: var(--radius-xl);
 }
 
-/* Removed unused .hero__scroll styles */
+/* Scroll Indicator */
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-base);
+  z-index: 10;
+}
+
+/* Preserve centering when animated in */
+.hero__scroll.animate-in {
+  transform: translateX(-50%) translateY(0);
+}
+
+.hero__scroll svg {
+  opacity: 0.35;
+  color: var(--color-text-muted);
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+}
 
 /* === PHILOSOPHY SECTION === */
 .philosophy {
@@ -762,7 +799,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__image-wrapper img {
   width: 100%;
   border-radius: var(--radius-xl);
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/5.3;
   object-fit: cover;
 }
 
@@ -1309,14 +1346,14 @@ a.book-card {
   }
   
   .hero__stats {
-    flex-direction: column;
-    gap: var(--space-lg);
-    align-items: center;
+    gap: 0;
+    justify-content: space-between;
   }
   
   .hero__stat {
     align-items: center;
     text-align: center;
+    flex: 1;
   }
   
   .hero__scroll {
@@ -1324,7 +1361,7 @@ a.book-card {
   }
   
   .book-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 180px 1fr;
   }
   
   .book-card__image {
@@ -1398,11 +1435,12 @@ a.book-card {
   
   /* Better spacing for mobile stats */
   .hero__stats {
-    padding-top: var(--space-xl);
+    padding-top: var(--space-md);
+    gap: 0;
   }
   
   .hero__stat {
-    padding: var(--space-md) 0;
+    padding: 0;
   }
 }
 
