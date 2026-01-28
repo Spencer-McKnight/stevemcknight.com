@@ -3,12 +3,22 @@
  * Consolidated functionality for all pages
  */
 
+import { URLS } from '../lib/constants.js';
+
 (function() {
   'use strict';
 
   // Cache DOM elements
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
+
+  // Populate book links from constants
+  $$('[data-book-link]').forEach(link => {
+    const bookKey = link.dataset.bookLink;
+    if (URLS.BOOKS[bookKey]) {
+      link.href = URLS.BOOKS[bookKey];
+    }
+  });
 
   // Set current year in footer
   const yearEl = $('#year');
