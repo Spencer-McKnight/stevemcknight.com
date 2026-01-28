@@ -222,12 +222,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* === ANIMATIONS === */
+/* Subtle fade-up animation - section containers and hero elements */
 [data-animate] {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* Hero-specific directional animations */
 [data-animate="fade-left"] {
   transform: translateX(50px);
 }
@@ -240,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.95);
 }
 
+/* Animate in state */
 [data-animate].animate-in {
   opacity: 1;
   transform: translateY(0) translateX(0) scale(1);
@@ -703,7 +706,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
   color: var(--color-text-primary);
   position: relative;
   z-index: 1;
@@ -751,7 +754,7 @@ h1, h2, h3, h4, h5, h6 {
 .quote-card__text {
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-text-primary);
   line-height: 1.5;
 }
@@ -882,7 +885,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__milestone blockquote {
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-text-primary);
   line-height: 1.6;
 }
@@ -1116,7 +1119,7 @@ a.book-card {
 .final-cta__quote {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
-  font-style: italic;
+  font-style: normal;
   color: var(--color-accent-gold);
   margin-bottom: var(--space-2xl);
   line-height: 1.4;
