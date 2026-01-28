@@ -623,7 +623,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
   color: var(--color-text-primary);
   margin-bottom: var(--space-2xl);
-  text-align: center;
 }
 
 .philosophy__intro em {
@@ -645,7 +644,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--space-2xl) var(--space-xl);
   margin: var(--space-2xl) auto;
   max-width: 700px;
-  text-align: center;
   background: var(--color-bg-tertiary);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
@@ -683,7 +681,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .philosophy__insights {
   color: var(--color-text-secondary);
-  text-align: center;
 }
 
 .philosophy__insights p {
@@ -695,8 +692,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .philosophy__quotes-grid {
+  max-width: var(--max-width-content);
+  margin: 0 auto var(--space-3xl);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
   margin-top: var(--space-3xl);
 }
@@ -740,6 +739,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: var(--text-xl);
   color: var(--color-text-secondary);
   line-height: 1.6;
+  text-align: left;
 }
 
 /* === ABOUT SECTION === */
