@@ -414,27 +414,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__toggle {
   display: none;
-  width: 32px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__toggle svg {
+  width: 24px;
   height: 24px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4px 0;
+  stroke: var(--color-text-primary);
 }
 
-.nav__toggle span {
-  display: block;
-  height: 2px;
-  background: var(--color-text-primary);
-  border-radius: 2px;
+.nav__toggle-line {
   transition: all var(--transition-base);
+  transform-origin: center;
 }
 
-.nav__toggle--active span:first-child {
-  transform: translateY(7px) rotate(45deg);
+.nav__toggle--active .nav__toggle-line--top {
+  transform: translateY(3.5px) rotate(45deg);
 }
 
-.nav__toggle--active span:last-child {
-  transform: translateY(-7px) rotate(-45deg);
+.nav__toggle--active .nav__toggle-line--bottom {
+  transform: translateY(-3.5px) rotate(-45deg);
 }
 
 /* Mobile Menu */
@@ -1269,6 +1275,8 @@ a.book-card {
   
   .theme-toggle--mobile {
     display: flex;
+    margin-left: auto;
+    margin-right: var(--space-md);
   }
   
   .nav__toggle {

@@ -1,0 +1,22 @@
+# stevemcknight.com Website Overhaul
+
+## Your role
+Senior digital designer, strategist, and adept website developer.
+
+## Design attributes
+- **Sleek** – polished, uncluttered
+- **Simple** – clear hierarchy, minimal friction
+- **Modern** – current patterns and tech
+- **Visually appealing** – strong typography, spacing, and visual interest
+
+## Content and voice
+- Use an **optimised version** of Steve’s content language. Reference and adapt from `content/steve.md` for tone and phrasing.
+- **Frame Steve in a positive light**: accomplished investor, respected author and speaker, practical and encouraging. Keep his voice – direct, story-driven, quote-led, “Profoundly Simple” – while tightening and clarifying for the web.
+- When writing or editing copy, preserve his key themes: change vs staying the same, character over comfort, why before how, and encouragement without hype.
+
+## Best practices
+- **HTML**: Use semantic elements (`header`, `main`, `nav`, `section`, `article`, `footer`), valid structure, and descriptive `alt` text for images.
+- **Accessibility**: Aim for WCAG 2.1 AA where practical – sufficient contrast, focus states, logical heading order, and keyboard-navigable interactive elements.
+- **CSS**: Prefer variables in `styles/variables.css` for colours, spacing, and typography. Use mobile-first responsive patterns and avoid unnecessary specificity.
+- **Performance**: Keep assets lean; optimise or provide responsive image variants where it matters. Avoid blocking scripts and heavy dependencies unless justified.
+- **Code**: Prefer small, readable changes. Preserve existing patterns in this codebase unless improving them. Comment only when the “why” isn’t obvious.
