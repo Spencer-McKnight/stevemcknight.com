@@ -1272,6 +1272,10 @@ a.book-card {
 }
 
 @media (max-width: 768px) {
+  body {
+    line-height: 1.6;
+  }
+
   .nav__links {
     display: none;
   }
@@ -1288,12 +1292,33 @@ a.book-card {
   
   .hero {
     min-height: auto;
-    padding: calc(var(--space-4xl) + 40px) 0 var(--space-2xl);
+    padding: calc(var(--space-4xl) + 20px) 0 var(--space-2xl);
+  }
+  
+  .hero__container {
+    gap: var(--space-xl);
+  }
+  
+  .hero__image img {
+    max-width: 260px;
+  }
+  
+  .hero__title {
+    margin-bottom: var(--space-md);
+  }
+  
+  .hero__subtitle {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .hero__actions {
+    margin-bottom: var(--space-xl);
   }
   
   .hero__stats {
     gap: 0;
     justify-content: space-between;
+    padding-top: var(--space-lg);
   }
   
   .hero__stat {
@@ -1306,8 +1331,25 @@ a.book-card {
     display: none;
   }
   
+  .philosophy__header,
+  .books__header,
+  .connect__content {
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .philosophy__quotes-grid {
+    margin-top: var(--space-2xl);
+    gap: var(--space-md);
+  }
+  
+  .quote-card {
+    padding: var(--space-lg);
+  }
+  
   .book-card {
     grid-template-columns: 150px 1fr;
+    padding: var(--space-lg);
+    gap: var(--space-md);
   }
   
   .book-card__image {
@@ -1323,14 +1365,44 @@ a.book-card {
     justify-content: center;
   }
   
+  .connect__cards {
+    gap: var(--space-lg);
+  }
+  
+  .connect-card {
+    padding: var(--space-xl);
+  }
+  
+  .connect-card__icon {
+    margin-bottom: var(--space-md);
+  }
+  
+  .connect-card__text {
+    margin-bottom: var(--space-md);
+  }
+  
+  .final-cta__quote {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .final-cta__text {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .footer {
+    padding: var(--space-2xl) 0 var(--space-lg);
+  }
+  
   .footer__main {
     flex-direction: column;
-    gap: var(--space-2xl);
+    gap: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
   }
   
   .footer__nav {
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
   }
   
   .footer__bottom {
