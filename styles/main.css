@@ -717,6 +717,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--gradient-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
 /* Uses .icon-box.icon-box--md utility */
@@ -880,9 +881,10 @@ a.book-card {
   grid-template-columns: 180px 1fr;
   gap: var(--space-xl);
   padding: var(--space-xl);
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
 .book-card:hover {
@@ -998,11 +1000,12 @@ a.book-card {
 
 .connect-card {
   padding: var(--space-2xl);
-  background: var(--color-bg-tertiary);
+  background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
+  box-shadow: var(--shadow-card);
 }
 
 /* Uses .card-hover utility for hover effects */
