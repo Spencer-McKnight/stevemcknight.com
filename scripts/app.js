@@ -50,7 +50,7 @@ import { URLS } from '../lib/constants.js';
   const nav = $('#nav');
   if (nav) {
     window.addEventListener('scroll', () => {
-      nav.classList.toggle('nav--scrolled', window.pageYOffset > 100);
+      nav.classList.toggle('nav--scrolled', window.pageYOffset > 0);
     }, { passive: true });
   }
 
