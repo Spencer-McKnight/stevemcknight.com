@@ -12,12 +12,11 @@ import { URLS } from '../lib/constants.js';
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
 
-  // Theme toggle - persists across pages
+  // Theme toggle - persists across pages (default: light)
   const initTheme = () => {
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
-    }
+    const theme = savedTheme || 'light';
+    document.documentElement.setAttribute('data-theme', theme);
   };
 
   const toggleTheme = () => {

@@ -399,11 +399,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
 }
 
-/* Show sun icon by default (dark mode), hide moon */
+/* Dark mode: show sun (click to switch to light), hide moon */
 .theme-toggle .icon-moon { display: none; }
 .theme-toggle .icon-sun { display: block; }
 
-/* In light mode, show moon icon, hide sun */
+/* Light mode (default): show moon (click to switch to dark), hide sun */
 [data-theme="light"] .theme-toggle .icon-moon { display: block; }
 [data-theme="light"] .theme-toggle .icon-sun { display: none; }
 
